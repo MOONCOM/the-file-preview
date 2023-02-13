@@ -2,7 +2,7 @@
   "name": "file-preview",
   "version": "0.1.0",
   "author": "MOONCOM",
-  "private": true,
+  "private": false,
   "license": "ISC",
   "main": "lib/file-preview.common.js",
   "scripts": {
