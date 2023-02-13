@@ -2,7 +2,7 @@
 
 ## 安装
 ```
-npm install file-preview
+npm i the-file-preview
 ```
 
 ## 描述
