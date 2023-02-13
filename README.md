@@ -15,7 +15,7 @@ npm install file-preview
 | file  | File | 本地的上传文件 |
 
 ## 示例
-点击查看 [线上演示](https://github.com/MOONCOM/file-preview/demo/).
+点击查看 [线上演示](https://mooncom.github.io/file-preview/demo/).
 
 ## 使用
 main.js 中注册全局组件
