@@ -1,33 +1,34 @@
 {
   "name": "preview-vue",
   "version": "0.1.0",
+  "author": "MOONCOM",
   "private": true,
+  "license": "ISC",
+  "main": "lib/file-preview.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build-npm": "vue-cli-service build --dest lib --target lib --name file-preview src/views/filePreview.vue",
+    "build": "vue-cli-service build --dest demo",
+    "lint": "vue-cli-service lint",
+    "report": "vue-cli-service build --report"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "docx-preview": "^0.1.14",
+    "exceljs": "^4.3.0",
     "vue": "^2.6.14",
     "vue-router": "^3.5.1",
-    "vuex": "^3.6.2"
+    "xlsx": "^0.18.5",
+    "xlsx-style": "^0.8.13",
+    "jszip": "^3.10.1",
+    "pdfjs-dist": "^2.0.943"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
-    "@babel/eslint-parser": "^7.12.16",
     "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
-    "@vue/eslint-config-airbnb": "^6.0.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-vue": "^8.0.3",
-    "eslint-plugin-vuejs-accessibility": "^1.1.0",
-    "sass": "^1.32.7",
-    "sass-loader": "^12.0.0",
     "vue-template-compiler": "^2.6.14"
   }
 }

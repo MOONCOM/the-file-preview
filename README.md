@@ -1,24 +1,57 @@
 # preview-vue
 
-## Project setup
+## 安装
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+npm install file-preview
 ```
 
-### Compiles and minifies for production
+## 描述
+实现了对线上文件和本地上传文件的预览
+
+## 参数选项
+| 参数    | 类型  | 描述 |
+|-------|-----|----|
+| url   | String | 线上文件的url |
+| file  | File | 本地的上传文件 |
+
+## 示例
+点击查看 [线上演示](https://github.com/MOONCOM/file-preview/demo/).
+
+## 使用
+main.js 中注册全局组件
 ```
-npm run build
+const FilePreview = require('file-preview');
+Vue.component('FilePreview',FilePreview);
+```
+1. 当使用线上url预览时
+```
+<template>
+    <filePreview :url="url"/>
+</template>
+```
+2. 当预览本地文件时
+``` 
+<template>
+    <div class="upload">
+      要上传的文件： <input type="file" @change="uploadHandle"/>
+    </div>
+    <filePreview :file="file"/>
+</template>
+
+export default {
+  name: 'Demo',
+  data() {
+    return {
+      file: null,
+    };
+  },
+  methods: {
+    uploadHandle(data){
+      this.file = data.target.files[0];
+    },
+  },
+};
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
