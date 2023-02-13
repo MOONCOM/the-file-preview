@@ -1,10 +1,10 @@
 {
   "name": "the-file-preview",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "author": "MOONCOM",
   "private": false,
   "license": "ISC",
-  "main": "lib/file-preview.common.js",
+  "main": "lib/file-preview.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build-npm": "vue-cli-service build --dest lib --target lib --name file-preview src/views/filePreview.vue",

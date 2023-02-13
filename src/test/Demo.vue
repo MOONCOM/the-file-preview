@@ -14,7 +14,7 @@
 </template>
 
 <script>
-const filePreview = require('@/views/filePreview.vue');
+import filePreview from '@/views/filePreview.vue';
 import fileLists from './testURL';
 
 export default {

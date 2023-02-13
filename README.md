@@ -20,7 +20,7 @@ npm i the-file-preview
 ## 使用
 main.js 中注册全局组件
 ```
-const FilePreview = require('file-preview');
+import FilePreview from '@/views/filePreview.vue';
 Vue.component('FilePreview',FilePreview);
 ```
 1. 当使用线上url预览时
