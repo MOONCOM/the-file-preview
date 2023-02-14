@@ -17,10 +17,14 @@ npm i the-file-preview
 ## 示例
 点击查看 [线上演示](https://mooncom.github.io/file-preview/demo/).
 
+## 项目地址
+- [github](https://github.com/MOONCOM/file-preview)
+- [npm](https://www.npmjs.com/package/the-file-preview)
+
 ## 使用
 main.js 中注册全局组件
 ```
-import FilePreview from '@/views/filePreview.vue';
+import FilePreview from 'the-file-preview';
 Vue.component('FilePreview',FilePreview);
 ```
 1. 当使用线上url预览时
