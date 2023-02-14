@@ -1,6 +1,6 @@
 {
   "name": "the-file-preview",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": "MOONCOM",
   "private": false,
   "license": "ISC",
@@ -17,7 +17,6 @@
     "docx-preview": "^0.1.14",
     "exceljs": "^4.3.0",
     "vue": "^2.6.14",
-    "vue-router": "^3.5.1",
     "xlsx": "^0.18.5",
     "xlsx-style": "^0.8.13",
     "jszip": "^3.10.1",
@@ -30,5 +29,6 @@
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "vue-template-compiler": "^2.6.14"
-  }
+  },
+  "keywords": ["preview","js","office","pdf","word","excel"]
 }

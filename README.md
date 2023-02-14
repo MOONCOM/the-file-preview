@@ -6,7 +6,7 @@ npm i the-file-preview
 ```
 
 ## 描述
-实现了对线上文件和本地上传文件的预览
+支持vue2和vue3，实现了对线上文件和本地上传文件的预览
 
 ## 参数选项
 | 参数    | 类型  | 描述 |
@@ -15,10 +15,10 @@ npm i the-file-preview
 | file  | File | 本地的上传文件 |
 
 ## 示例
-点击查看 [线上演示](https://mooncom.github.io/file-preview/demo/).
+点击查看 [线上演示](https://mooncom.github.io/the-file-preview/demo/).
 
 ## 项目地址
-- [github](https://github.com/MOONCOM/file-preview)
+- [github](https://github.com/MOONCOM/the-file-preview)
 - [npm](https://www.npmjs.com/package/the-file-preview)
 
 ## 使用
