@@ -1,5 +1,3 @@
-# preview-vue
-
 ## 安装
 ```
 npm i the-file-preview
