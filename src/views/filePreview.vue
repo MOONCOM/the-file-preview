@@ -77,7 +77,7 @@ export default {
       this.operateData(url);
     },
     fileChangeHandle(fileObj){
-      console.log(fileObj);
+      // console.log(fileObj);
       let url = '';
       if (window.createObjcectURL != undefined) {
         url = window.createOjcectURL(fileObj);

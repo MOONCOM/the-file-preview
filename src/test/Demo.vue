@@ -1,15 +1,23 @@
 <template>
   <div class="demo">
-    <div class="operateList">
-      <div v-for="(value,key) in fileLists" :key="key" @click="previewHandler(value)">{{key}}</div>
-    </div>
-    <div class="upload">
-      要预览的本地文件： <input type="file" @change="uploadHandle"/>
-    </div>
-    <hr>
-    <div class="preview-section">
-      <filePreview :url="url" :file="file"/>
-    </div>
+    <fieldset>
+      <legend>预览线上文件</legend>
+      <div class="operateList">
+        <div v-for="(value,key) in fileLists" :key="key" :class="{'selected':value === url}" @click="previewHandler(value)">{{key}}</div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>预览本地文件</legend>
+      <div class="upload">
+        选择要预览的本地文件： <input type="file" @change="uploadHandle"/>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>预览内容展示</legend>
+      <div class="preview-section">
+        <filePreview :url="url" :file="file"/>
+      </div>
+    </fieldset>
   </div>
 </template>
 
@@ -42,6 +50,9 @@ export default {
 </script>
 
 <style scoped>
+.demo{
+  margin:0 40px;
+}
 .operateList{
   display: flex;
   justify-content: center;
@@ -52,6 +63,9 @@ export default {
   width:1200px;
   margin:0 auto 20px;
 }
+.operateList .selected{
+  background-color: #0077aa;
+}
 .operateList >div{
   width:120px;
   height:40px;
@@ -59,7 +73,7 @@ export default {
   text-align: center;
   cursor: pointer;
   margin-right:10px;
-  background-color: #0077aa;
+  background-color: #52c1ef;
   color:white;
 }
 .preview-section{

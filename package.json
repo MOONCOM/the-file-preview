@@ -1,6 +1,6 @@
 {
   "name": "the-file-preview",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "author": "MOONCOM",
   "private": false,
   "license": "ISC",
@@ -20,6 +20,8 @@
     "xlsx": "^0.18.5",
     "xlsx-style": "^0.8.13",
     "jszip": "^3.10.1",
+    "tinycolor2": "^1.6.0",
+    "x-data-spreadsheet": "^1.1.9",
     "pdfjs-dist": "^2.0.943"
   },
   "devDependencies": {
@@ -30,5 +32,12 @@
     "@vue/cli-service": "~5.0.0",
     "vue-template-compiler": "^2.6.14"
   },
-  "keywords": ["preview","js","office","pdf","word","excel"]
+  "keywords": [
+    "preview",
+    "js",
+    "office",
+    "pdf",
+    "word",
+    "excel"
+  ]
 }
