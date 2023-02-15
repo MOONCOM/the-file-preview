@@ -93,7 +93,7 @@ export default {
     operateData(data){
       const TYPE_JSON = {
         image: 'jpeg,bmp,jpg,png,tif,gif,svg,wmf,webp',
-        video: 'mp4,webm,ogg',
+        video: 'mp4,webm,ogg,m4v',
         audio: 'mp3,wav,flac',
         txt: 'txt',
         excel: 'xls,xlsx',
